@@ -12,9 +12,16 @@ public class MyCalendarTest {
     }
 
     @Test
-    void createDateFromTest() {
+    void createDateFromStringTest() {
         MyCalendar mycalendar = new MyCalendar();
         Date date = mycalendar.createDateFrom("2022", "02","09");
+
+        System.out.println(date);
+    }
+    @Test
+    void createDateFromStringsTest() {
+        MyCalendar mycalendar = new MyCalendar();
+        Date date = mycalendar.createDateFrom("20000101");
 
         System.out.println(date);
     }
