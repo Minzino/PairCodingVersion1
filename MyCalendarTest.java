@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class MyCalendarTest {
 
@@ -9,6 +9,14 @@ public class MyCalendarTest {
         MyCalendar mycalendar = new MyCalendar();
         Date today = mycalendar.getToday();
         System.out.println(today);
+    }
+
+    @Test
+    void createDateFromTest() {
+        MyCalendar mycalendar = new MyCalendar();
+        Date date = mycalendar.createDateFrom("2022", "02","09");
+
+        System.out.println(date);
     }
 
 
