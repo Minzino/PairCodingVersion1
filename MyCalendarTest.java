@@ -2,13 +2,15 @@ import org.junit.jupiter.api.Test;
 
 import java.sql.Date;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class MyCalendarTest {
 
     @Test
     void getTodayTest(){
         MyCalendar mycalendar = new MyCalendar();
-        Date today = mycalendar.getToday();
-        System.out.println(today);
+        Date sut = mycalendar.getToday();
+        assertEquals(sut.toString(),new Date(System.currentTimeMillis()).toString());
     }
 
     @Test
