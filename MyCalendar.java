@@ -9,11 +9,12 @@ public class MyCalendar {
     }
 
     public Date createDateFrom(String year, String month, String day) {
-        String dateString = year+"-"+month+"-"+day;
+        String dateString = year + "-" + month + "-" + day;
         Date date = Date.valueOf(dateString);
 
         return date;
     }
+
     public Date createDateFrom(String dateString) {
         SimpleDateFormat beforeFormat = new SimpleDateFormat("yyyymmdd");
 
@@ -37,4 +38,11 @@ public class MyCalendar {
 
         return d;
     }
+
+//    public String transformDateToDateStringKorean(Date date) {
+//        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy년 MM월 dd일"); //원하는 데이터 포맷 지정 String strNowDate = simpleDateFormat.format(nowDate); //지정한 포맷으로 변환 System.out.println("포맷 지정 후 : " + strNowDate);
+//        String strNowDate = simpleDateFormat.format(date);
+//
+//        return strNowDate;
+//    }
 }

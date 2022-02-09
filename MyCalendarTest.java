@@ -20,6 +20,7 @@ public class MyCalendarTest {
 
         System.out.println(date);
     }
+
     @Test
     void createDateFromStringsTest() {
         MyCalendar mycalendar = new MyCalendar();
@@ -28,5 +29,12 @@ public class MyCalendarTest {
         System.out.println(date);
     }
 
+//    @Test
+//    void transformDateToDateStringKoreanTest() {
+//        MyCalendar mycalendar = new MyCalendar();
+//        Date date = new Date();
+//        String date = mycalendar.transformDateToDateStringKorean();
+//
+//    }
 
 }
